@@ -3,6 +3,20 @@ import box_image from './img/Computer-sales.jpg';
 
 import './App.scss';
 
+const ProductItem = () =>
+    <div class="product-item">
+        <img src="" alt="Product"/>
+        <p class="product-title">sdfhsdfhfdh</p>
+        <p class="product-price">20000</p>
+    </div>
+const FooterList = () => 
+    <ul class="footer-list">
+        <li class="footer-list-item">dsfhgdsfh</li>
+        <li class="footer-list-item"><a class="footer-list-item-link" href="">Про компанію</a></li>
+        <li class="footer-list-item"><a class="footer-list-item-link" href="">Каталог</a></li>
+        <li class="footer-list-item"><a class="footer-list-item-link" href="">Доставка</a></li>
+        <li class="footer-list-item"><a class="footer-list-item-link" href="">Оплата</a></li>
+    </ul>
 function App() {
   return (
     <div id='body'>
@@ -77,26 +91,10 @@ function App() {
               <div class="wrapper">
                   <h2 class="title-h2">fdsjhfghsdfh</h2>
                   <div class="product">
-                      <div class="product-item">
-                          <img src="" alt="Product"/>
-                          <p class="product-title">sdfhsdfhfdh</p>
-                          <p class="product-price">20000</p>
-                      </div>
-                      <div class="product-item">
-                          <img src="" alt="Product"/>
-                          <p class="product-title">sdfhsdfhfdh</p>
-                          <p class="product-price">20000</p>
-                      </div>
-                      <div class="product-item">
-                          <img src="" alt="Product"/>
-                          <p class="product-title">sdfhsdfhfdh</p>
-                          <p class="product-price">20000</p>
-                      </div>
-                      <div class="product-item">
-                          <img src="" alt="Product"/>
-                          <p class="product-title">sdfhsdfhfdh</p>
-                          <p class="product-price">20000</p>
-                      </div>
+                      <ProductItem/>
+                      <ProductItem/>
+                      <ProductItem/>
+                      <ProductItem/>
                   </div>
                   <a href="" class="btn btn-center"><span>all model</span></a>
               </div>
@@ -105,37 +103,13 @@ function App() {
               <div class="wrapper">
                   <footer class="footer">
                       <div class="footer-logo">
-                          <img src="img/tarra-logo.svg" alt="Logo" width="150px"/>
+                          <img src={logo} alt="Logo" width="150px"/>
                       </div>
                       <div class="footer-nav">
-                          <ul class="footer-list">
-                              <li class="footer-list-item">dsfhgdsfh</li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">Про компанію</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">Каталог</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">Доставка</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">Оплата</a></li>
-                          </ul>
-                          <ul class="footer-list">
-                              <li class="footer-list-item">Категорії</li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">прпар</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">авррпа</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">аврарпр</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">варарапр</a></li>
-                          </ul>
-                          <ul class="footer-list">
-                              <li class="footer-list-item">Категорії</li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">прпар</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">авррпа</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">аврарпр</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">варарапр</a></li>
-                          </ul>
-                          <ul class="footer-list">
-                              <li class="footer-list-item">Категорії</li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">прпар</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">авррпа</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">аврарпр</a></li>
-                              <li class="footer-list-item"><a class="footer-list-item-link" href="">варарапр</a></li>
-                          </ul>
+                          <FooterList/>
+                          <FooterList/>
+                          <FooterList/>
+                          <FooterList/>
                       </div>
                   </footer>
               </div>

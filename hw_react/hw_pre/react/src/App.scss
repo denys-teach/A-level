@@ -56,7 +56,7 @@ body {
 }
 
 .cart {
-	background-image: url(../img/cart.svg);
+	background-image: url(./img/cart.svg);
 	padding-left: 45px;
 	display: block;
 	width: 30px;
@@ -65,7 +65,7 @@ body {
 	background-position: 0 center;
 
 	&-count {
-		background-image: url(../img/cart-bg.svg);
+		background-image: url(./img/cart-bg.svg);
 		background-repeat: no-repeat;
 		background-position: 0 center;
 		color: #fff;
