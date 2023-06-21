@@ -200,9 +200,22 @@
 
 //For Multiply Table
 
-{
-
-}
+/*{
+    const arr = [[0,0,0,0,0,0],[0,1,2,3,4,5],[0,2,4,6,8,10],[0,3,6,9,12,15],[0,4,8,12,16,20],[0,5,10,15,20,25]];
+    let table = '<table border="1">';
+    let i = 0;
+    for (const tr of arr) {
+        const rowColor = (i%2===0)?"grey":"yellow"
+        table += `<tr onmouseover ="style.backgroundColor = '${rowColor}'" onmouseout = "style.backgroundColor = ''">`
+        for (const td of tr) {
+            table += `<td width="15">${td}</td>`
+        }
+        table += '</tr>'
+        i++;
+    }
+    table += '</table>'
+    document.write(table)
+}*/
 
 //Function Capitalize
 
@@ -232,6 +245,43 @@
 
 //Filter Lexics
 
-{
-       
-}
+/*{
+    const badWords = ['бяка', "блін", "капець"] 
+    let str = prompt('Введіть рядок: ').split(' ')
+    let newStr = str.filter((element)=>badWords.includes(element))
+    console.log(str.join(' '), `\n"${newStr}" - були використанні в реченні!`);
+}*/
+
+//Beep Lexics
+
+/*{
+    let str = prompt('Введіть рядок').split(' ');
+    let result = [];
+    str.map(element => {['блін', "капець", "дідько"].includes(element)?result.push('BEEP'):result.push(element)});
+    console.log(result.join(' '));
+}*/
+
+//Reduce HTML
+
+/*{
+    const currencies = ["USD", "EUR", "GBP", "UAH"]
+    let str          = "<select>"
+    str             += currencies.reduce( (a,b) => a + `<option>${b}</option>`, '')
+    str             += "</select>"
+    document.write(str)
+}*/
+
+//For Brackets Hell Check                                                       останнє завдання надто складне
+
+/*{
+    const line = prompt()
+    const bracketsStack = []
+    let   i             = 0
+    for (const character of line){
+        //не звертайте уваги на символи, крім трьох видів дужок
+        if (ПРОБЛЕМА) {
+             break; //оператор break перериває цикл передчасно
+        }
+        i++ //iндекс поточної лiтери
+    }
+}*/
